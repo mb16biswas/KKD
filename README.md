@@ -1,1 +1,82 @@
-# KKD
+# Legal-KKD
+
+<p align="center">
+  <img src="./pipeline.jpg" width="600" title="Overall Pipeline">
+</p>
+
+## Instructions to run the code
+
+### Required directory structure to save the results:
+
+```
++-- workspace/
+|   +-- results/
+|   |   +--dis-kd-1.csv
+|   |   +--dis-kd-steps-1.csv
+|   |   +--dis-kd-2.csv
+|   |   ...
+|   +-- models/
+|   |   +--student-1.pth
+|   |   +--student-2.pth
+|   |   +--student-2.pth
+|   |   ...
+|   +-- downstream/
+|   |   +--ecthr_a/
+|   |   +--ecthr_b/
+...
+```
+
+### Install the required packages:
+
+```
+pip install --upgrade pip
+pip install torch==2.0.1
+pip install datasets==2.16.1
+pip install transformers==4.30
+pip install -q -U trl accelerate git+https://github.com/huggingface/peft.git
+pip install -q bitsandbytes einops sentencepiece
+pip uninstall -y apex
+pip install keybert
+
+```
+### Run the command for KKD training
+
+```
+python kkd-training.py
+```
+Available arguments:
+- `--b`: Batch size. Default = 32
+- `--e`: Current number of epoch . Default = 1
+- `--cl`: Input sequence length of the Teacher and Student model . Default = 512
+- `--l1`: Learning rate for training. Default = 0.00001
+- `--n`: Total no of samples in the dataset. Default = 100000
+
+
+
+### Run the commands for the downstreaming tasks
+
+```
+python finetune/ecthr_a.py
+python finetune/ecthr_b.py
+python finetune/scotus.py
+python finetune/ledger.py
+python finetune/unfair-tos.py
+python finetune/eurlex.py
+python finetune/case_hold.py
+
+```
+
+Available arguments for ecthr_a, ecthr_b and scotus :
+
+- `--b`: Batch size. Default = 8
+- `--e`: Current number of epoch . Default = 20
+- `--ms`: Paragraph Length . Default = 32
+- `--l`: Learning rate for training. Default = 0.00003
+
+
+Available arguments for ledger, unfair-tos, eurlex and case_hold :
+
+- `--b`: Batch size. Default = 8
+- `--e`: Current number of epoch . Default = 20
+- `--l`: Learning rate for training. Default = 0.00003
+
