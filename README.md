@@ -1,8 +1,6 @@
 # Legal-KKD
 
-<p align="center">
-  <img src="./pipeline.jpg" width="600" title="Overall Pipeline">
-</p>
+
 
 ## Instructions to run the code
 
