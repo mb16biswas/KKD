@@ -216,11 +216,11 @@ def compute_metrics(p: EvalPrediction):
 
 if(task == 1):
 
-  df = pd.read_csv("/workspace/data/Momojit/gan-kd/fin-bert/Data/50.csv")
+  df = pd.read_csv("/workspace/fin/data/50.csv")
 
 else:
 
-  df = pd.read_csv("/workspace/data/Momojit/gan-kd/fin-bert/Data/all.csv")
+  df = pd.read_csv("/workspace/fin/data/all.csv")
 
 
 print()
