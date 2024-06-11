@@ -451,7 +451,7 @@ if(EPOCHS > 1):
 
 
 
-df = pd.read_csv("/workspace/Data/finance-data.csv")
+df = pd.read_csv("/workspace/fin/data/finance-data.csv")
 
 arr = list(df["data"])
 
