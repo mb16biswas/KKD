@@ -62,7 +62,8 @@ pip install keybert
 ### Run the command for KKD training
 
 ```
-python kkd-training.py
+python fin_kkd_student.py
+python legal_kkd_student.py
 ```
 Available arguments:
 - `--b`: Batch size. Default = 32
@@ -73,7 +74,7 @@ Available arguments:
 
 
 
-### Run the commands for the downstreaming tasks
+### Run the commands for the downstreaming tasks for Finance Domain
 
 ```
 python legal_down_streaming/ecthr_a.py
@@ -100,3 +101,33 @@ Available arguments for ledger, unfair-tos, eurlex and case_hold :
 - `--e`: Current number of epoch . Default = 20
 - `--l`: Learning rate for training. Default = 0.00003
 
+
+
+
+### Run the commands for the downstreaming tasks for Legal Domain
+
+```
+python fin_down_streaming/fiqa.py
+python fin_down_streaming/fiph.py 
+
+```
+
+
+
+
+Available arguments for fiph :
+
+- `--b`: Batch size. Default = 64
+- `--e`: Current number of epoch . Default = 25
+- `--l`: Learning rate for training. Default = 3*0.00001
+- `--n`: Number of K-fold. Default = 10
+- `--t`: 1 := 100-percent, else := 100 DATA 
+
+
+
+Available arguments for fiqa :
+
+- `--b`: Batch size. Default = 64
+- `--e`: Current number of epoch . Default = 25
+- `--l`: Learning rate for training. Default = 3*0.00001
+- `--n`: Number of K-fold. Default = 10
