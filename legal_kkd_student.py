@@ -596,8 +596,8 @@ print()
 
 
 
-path1 = "/workspace/results/"
-path2 = "/workspace/models/"
+path1 = "/workspace/legal/results/"
+path2 = "/workspace/legal/models/"
 
 
 
