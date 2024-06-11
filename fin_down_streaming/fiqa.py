@@ -24,7 +24,7 @@ parser.add_argument('--d', type=int, default = 1)
 parser.add_argument('--e', type=int, default = 25)
 parser.add_argument('--l', type=float, default = 3*0.00001)
 parser.add_argument('--n', type=int, default = 10)
-parser.add_argument('--cl', type=int, default = 64) #512
+
 
 args = parser.parse_args()
 
@@ -34,7 +34,7 @@ RANDOM_SEED = 16
 MODEL_NAME = "ProsusAI/finbert"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 EPOCHS = args.e
-CUTOFF_LEN = args.cl
+CUTOFF_LEN = 64
 n_layer = 6
 l = args.l
 n_splits = args.n
