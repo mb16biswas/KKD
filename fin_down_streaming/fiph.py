@@ -215,11 +215,11 @@ def compute_metrics(p: EvalPrediction):
 
 if(task == 1):
 
-  df = pd.read_csv("/workspace/fin/data/50.csv")
+  df = pd.read_csv("/workspace/fin/data/100-percent.csv")
 
 else:
 
-  df = pd.read_csv("/workspace/fin/data/all.csv")
+  df = pd.read_csv("/workspace/fin/data/all-data.csv")
 
 
 print()
