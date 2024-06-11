@@ -55,7 +55,6 @@ parser.add_argument('--b', type=int, default = 64)
 parser.add_argument('--e', type=int, default = 25)
 parser.add_argument('--m', type=int, default = 1)
 parser.add_argument('--l', type=float, default = 3*0.00001)
-parser.add_argument('--cl', type=int, default = 64)
 parser.add_argument('--n', type=int, default = 10)
 parser.add_argument('--t', type=int, default = 1)
 
@@ -71,7 +70,7 @@ args = parser.parse_args()
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 MODEL_NAME = "ProsusAI/finbert"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-max_segment_length=args.cl
+max_segment_length=64
 lr = args.l
 epoch = args.e
 batch_size = args.b
