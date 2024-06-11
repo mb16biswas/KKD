@@ -10,20 +10,40 @@
 
 ```
 +-- workspace/
-|   +-- results/
-|   |   +--dis-kd-1.csv
-|   |   +--dis-kd-steps-1.csv
-|   |   +--dis-kd-2.csv
-|   |   ...
-|   +-- models/
-|   |   +--student-1.pth
-|   |   +--student-2.pth
-|   |   +--student-2.pth
-|   |   ...
-|   +-- downstream/
-|   |   +--ecthr_a/
-|   |   +--ecthr_b/
-...
+  |    fin/
+  |   +-- data/
+  |   +-- results/
+  |   |   +--dis-kd-1.csv
+  |   |   +--dis-kd-steps-1.csv
+  |   |   ...
+  |   +-- models/
+  |   |   +--student-1.pth
+  |   |   ...
+  |   +-- downstream/
+  |   |   +--fiph/
+  |   |   ...
+  |   |   +--dis-kd-1.csv
+  |   |   +--dis-kd-steps-1.csv
+  |   |   +--dis-kd-2.csv
+  |   |   ...
+  |    legal/
+  |   +-- data/
+  |   +-- results/
+  |   |   +--dis-kd-1.csv
+  |   |   +--dis-kd-steps-1.csv
+  |   |   ...
+  |   +-- models/
+  |   |   +--student-1.pth
+  |   |   ...
+  |   +-- downstream/
+  |   |   +--ecthr_a/
+  |   |   +--ecthr_b/
+  |   |   ...
+  |   +-- results/
+  |   |   +--dis-kd-1.csv
+  |   |   +--dis-kd-steps-1.csv
+  |   |   +--dis-kd-2.csv
+  |   |   ...
 ```
 
 ### Install the required packages:
@@ -56,13 +76,13 @@ Available arguments:
 ### Run the commands for the downstreaming tasks
 
 ```
-python finetune/ecthr_a.py
-python finetune/ecthr_b.py
-python finetune/scotus.py
-python finetune/ledger.py
-python finetune/unfair-tos.py
-python finetune/eurlex.py
-python finetune/case_hold.py
+python legal_down_streaming/ecthr_a.py
+python legal_down_streaming/ecthr_b.py
+python legal_down_streaming/scotus.py
+python legal_down_streaming/ledger.py
+python legal_down_streaming/unfair-tos.py
+python legal_down_streaming/eurlex.py
+python legal_down_streaming/case_hold.py
 
 ```
 
