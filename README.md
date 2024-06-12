@@ -34,11 +34,7 @@
   |   |   +--ecthr_a/
   |   |   +--ecthr_b/
   |   |   ...
-  |   +-- results/
-  |   |   +--dis-kd-1.csv
-  |   |   +--dis-kd-steps-1.csv
-  |   |   +--dis-kd-2.csv
-  |   |   ...
+
 ```
 
 ### Install the required packages:
@@ -69,7 +65,7 @@ Available arguments:
 
 
 
-### Run the commands for the downstreaming tasks for Finance Domain
+### Run the commands for the downstreaming tasks for Legal Domain
 
 ```
 python legal_down_streaming/ecthr_a.py
@@ -99,7 +95,7 @@ Available arguments for ledger, unfair-tos, eurlex and case_hold :
 
 
 
-### Run the commands for the downstreaming tasks for Legal Domain
+### Run the commands for the downstreaming tasks for Finance Domain
 
 ```
 python fin_down_streaming/fiqa.py
