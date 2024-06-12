@@ -436,11 +436,8 @@ def train(model,train_d2,val_d2,DEVICE,EPOCHS,verbose = True):
 
 
 
-# train_ssl = load_dataset("ChanceFocus/fiqa-sentiment-classification", split = "train[:10]")
-# val_ssl = load_dataset("ChanceFocus/fiqa-sentiment-classification", split = "valid[:10]")
 
-
-df = pd.read_csv("/workspace/data/Momojit/gan-kd/fin-bert/Data/reg.csv")
+df = pd.read_csv("/workspace/fin/data/reg.csv")
 
 
 X = list(df["sentence"])
