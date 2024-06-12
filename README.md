@@ -20,9 +20,6 @@
   |   +-- downstream/
   |   |   +--fiph/
   |   |   ...
-  |   |   +--dis-kd-1.csv
-  |   |   +--dis-kd-steps-1.csv
-  |   |   +--dis-kd-2.csv
   |   |   ...
   |    legal/
   |   +-- data/
@@ -119,7 +116,7 @@ Available arguments for fiph :
 - `--e`: Current number of epoch . Default = 25
 - `--l`: Learning rate for training. Default = 3*0.00001
 - `--n`: Number of K-fold. Default = 10
-- `--t`: 1 := 100-percent, else := 100 DATA 
+- `--t`: 1 := 100-percent, else := ALL-DATA 
 
 
 
