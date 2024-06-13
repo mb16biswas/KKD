@@ -25,7 +25,7 @@ parser.add_argument('--b', type=int, default = 32)
 parser.add_argument('--e', type=int, default = 1)
 parser.add_argument('--cl', type=int, default = 512)
 parser.add_argument('--l1', type=float, default = 0.00001)
-parser.add_argument('--n', type=int, default = 100000)
+parser.add_argument('--n', type=int, default = 120000)
 
 args = parser.parse_args()
 
