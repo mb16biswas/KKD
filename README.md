@@ -61,7 +61,7 @@ Available arguments:
 - `--e`: Current number of epoch . Default = 1
 - `--cl`: Input sequence length of the Teacher and Student model . Default = 512
 - `--l1`: Learning rate for training. Default = 0.00001
-- `--n`: Total no of samples in the dataset. Default = 100000
+- `--n`: Total no of samples in the dataset. Default = 1200000
 
 
 
