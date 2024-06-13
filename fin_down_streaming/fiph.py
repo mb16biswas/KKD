@@ -53,7 +53,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--b', type=int, default = 64)
 parser.add_argument('--e', type=int, default = 25)
-parser.add_argument('--l', type=float, default = 3*0.00001)
+parser.add_argument('--l', type=float, default = 2*0.00001)
 parser.add_argument('--n', type=int, default = 10)
 parser.add_argument('--t', type=int, default = 1)
 
