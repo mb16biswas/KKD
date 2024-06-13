@@ -110,7 +110,7 @@ Available arguments for fiph :
 
 - `--b`: Batch size. Default = 64
 - `--e`: Current number of epoch . Default = 25
-- `--l`: Learning rate for training. Default = 3*0.00001
+- `--l`: Learning rate for training. Default = 2*0.00001
 - `--n`: Number of K-fold. Default = 10
 - `--t`: 1 := 100-percent, else := ALL-DATA 
 
@@ -120,5 +120,5 @@ Available arguments for fiqa :
 
 - `--b`: Batch size. Default = 64
 - `--e`: Current number of epoch . Default = 25
-- `--l`: Learning rate for training. Default = 3*0.00001
+- `--l`: Learning rate for training. Default = 2*0.00001
 - `--n`: Number of K-fold. Default = 10
