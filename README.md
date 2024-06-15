@@ -50,7 +50,7 @@ pip uninstall -y apex
 pip install keybert
 
 ```
-### Run the command for KKD training
+### Run the commands for KKD training
 
 ```
 python fin_kkd_student.py
