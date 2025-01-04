@@ -1,6 +1,6 @@
 # Keyword Knowledge Distilation (KKD)
 
-
+![Description of the image](kkd-diagram.png)
 
 ## Instructions to run the code
 
