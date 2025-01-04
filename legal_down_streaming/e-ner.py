@@ -71,7 +71,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--e', type=int, default = 100)
 parser.add_argument('--b', type=int, default = 8)
 parser.add_argument('--l', type=float, default = 3*0.00001)
-parser.add_argument('--f', type=int, default = 1)
 parser.add_argument('--s', type=int, default = 1)
 
 args = parser.parse_args()
@@ -80,7 +79,6 @@ args = parser.parse_args()
 EPOCHS = args.e
 batch_size = args.b
 lr = args.l
-flag = args.f
 seed = args.s
 MODEL_NAME = "nlpaueb/legal-bert-base-uncased"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
