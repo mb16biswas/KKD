@@ -77,6 +77,9 @@ python legal_down_streaming/ledger.py
 python legal_down_streaming/unfair-tos.py
 python legal_down_streaming/eurlex.py
 python legal_down_streaming/case_hold.py
+python legal_down_streaming/e-ner.py
+python legal_down_streaming/policy-qa.py
+
 
 ```
 
@@ -86,6 +89,7 @@ Available arguments for ecthr_a, ecthr_b and scotus :
 - `--e`: Current number of epoch . Default = 20
 - `--ms`: Paragraph Length . Default = 32
 - `--l`: Learning rate for training. Default = 0.00003
+- `--s`: Random seed
 
 
 Available arguments for ledger, unfair-tos, eurlex and case_hold :
@@ -93,7 +97,22 @@ Available arguments for ledger, unfair-tos, eurlex and case_hold :
 - `--b`: Batch size. Default = 8
 - `--e`: Current number of epoch . Default = 20
 - `--l`: Learning rate for training. Default = 0.00003
+- `--s`: Random seed
 
+Available arguments for policy-qa
+
+- `--e`: Initial number of epochs. Default = 1  
+- `--t`: Total number of epochs. Default = 10  
+- `--b`: Batch size. Default = 16  
+- `--l`: Learning rate for training. Default = 0.00003  
+- `--s`: Random seed for reproducibility. Default = 1
+
+Available arguments for e-ner
+
+- `--e`: Total number of epochs. Default = 100  
+- `--b`: Batch size. Default = 8  
+- `--l`: Learning rate for training. Default = 0.00003  
+- `--s`: Random seed for reproducibility. Default = 1
 
 
 
@@ -101,7 +120,8 @@ Available arguments for ledger, unfair-tos, eurlex and case_hold :
 
 ```
 python fin_down_streaming/fiqa.py
-python fin_down_streaming/fiph.py 
+python fin_down_streaming/fiph.py
+python fin_down_streaming/fin-ner.py
 
 ```
 
@@ -114,7 +134,8 @@ Available arguments for fiph :
 - `--e`: Current number of epoch . Default = 25
 - `--l`: Learning rate for training. Default = 2*0.00001
 - `--n`: Number of K-fold. Default = 10
-- `--t`: 1 := 100-percent, else := ALL-DATA 
+- `--t`: 1 := 100-percent, else := ALL-DATA
+- 
 
 
 
@@ -124,3 +145,10 @@ Available arguments for fiqa :
 - `--e`: Current number of epoch . Default = 25
 - `--l`: Learning rate for training. Default = 2*0.00001
 - `--n`: Number of K-fold. Default = 10
+
+Available arguments for fin-ner :
+
+- `--e`: Total number of epochs. Default = 50  
+- `--b`: Batch size. Default = 8  
+- `--l`: Learning rate for training. Default = 0.00001  
+- `--s`: Random seed for reproducibility. Default = 1
