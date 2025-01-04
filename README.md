@@ -46,6 +46,7 @@ pip install datasets==2.16.1
 pip install transformers==4.30
 pip install -q -U trl accelerate git+https://github.com/huggingface/peft.git
 pip install -q bitsandbytes einops sentencepiece
+pip install evaluate
 pip uninstall -y apex
 pip install keybert
 
